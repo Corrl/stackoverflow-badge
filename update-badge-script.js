@@ -1,8 +1,8 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
 
-let userID = 4198170
-let userName = "Tobse"
+let userID = 15388872
+let userName = "Corrl"
 
 let templateFile = 'badge-template.svg'
 let outputFile = 'stackoverflow-badge.svg'
@@ -51,6 +51,7 @@ function setEnv(key, value) {
 }
 
 function parseJson(json) {
+    console.log('stackoverflow json', json)
     let reputation = json.reputation;
     let bronze = json.badge_counts.bronze;
     let silver = json.badge_counts.silver;
