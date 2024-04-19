@@ -52,7 +52,7 @@ function setEnv(key, value) {
 
 function parseJson(json) {
     console.log('stackoverflow json', json)
-    let reputation = json.reputation;
+    let reputation = json.reputation.toLocaleString();
     let bronze = json.badge_counts.bronze;
     let silver = json.badge_counts.silver;
     let gold = json.badge_counts.gold;
