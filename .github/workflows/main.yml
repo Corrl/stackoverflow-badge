@@ -22,13 +22,13 @@ jobs:
       - name: Commit files
         if: env.update-badge == 'true'
         run: |
-          git config --local user.email "github@corinnasteinhoff.de"
+          git config --local user.email "github@corinnasteinhoff.deeee"
           git config --local user.name "Corrl"
-         git add stackoverflow-badge.svg
-         git commit -m "🤖 Update Badge" -a
+          git add stackoverflow-badge.svg
+          git commit -m "🤖 Update Badge" -a
       - name: Push changes
         if: env.update-badge == 'true'
         uses: ad-m/github-push-action@master
         with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-         branch: ${{ github.ref }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
