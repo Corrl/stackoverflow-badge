@@ -2,9 +2,9 @@ name: Update stackoverflow badge
 on:
   push:
   pull_request:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'  # every day at midnight
-  workflow_dispatch:
 
 jobs:
   update-badge:
